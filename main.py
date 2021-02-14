@@ -1,3 +1,10 @@
+"""
+Main module for FILMS_MAP
+
+GitHub Repository
+https://github.com/bmykhaylivvv/films_map
+"""
+
 from geopy.extra.rate_limiter import RateLimiter
 import folium
 from geopy.geocoders import Nominatim
