@@ -51,17 +51,25 @@ sorted_films = sorted(filtered_suitable_films, key=lambda x: x[-1])
 final_film_lst = sorted_films[:9]
 
 
+
 # Folium Part
+me = folium.FeatureGroup(name="me")
 
 
-
+flms = folium.FeatureGroup(name="films")
 for film_lst in final_film_lst:
     title = film_lst[0]
     distance_from_given_point = film_lst[4]
     coordinates = film_lst[3]
-    my_coord = (current_lat, current_long)
 
-    map.add_child(folium.Marker(location=my_coord,
+    # flms.add_child(folium.Marker(location=(41.8755616, -87.6244212),
+    #                             popup=f"Your`re here",
+    #                             icon=folium.Icon(color='red')))
+
+    flms.add_child(folium.Marker(location=coordinates,
                                 popup=f"Titile: {title}, \n Distance from given point: {distance_from_given_point}",
-                                icon=folium.Icon(color='darkblue')))
+                                icon=folium.Icon(color='cadetblue')))
+
+map.add_child(flms)
 map.save("Map_1 .html")
+# (41.8755616, -87.6244212)
