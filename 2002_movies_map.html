@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f6dd7fe0d2c44c9299f8ad8b67428608 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f6dd7fe0d2c44c9299f8ad8b67428608" ></div>
+        
+</body>
+<script>    
+    
+            var map_f6dd7fe0d2c44c9299f8ad8b67428608 = L.map(
+                "map_f6dd7fe0d2c44c9299f8ad8b67428608",
+                {
+                    center: [48.23589686231121, 16.363542258384022],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_504bf748777a4948a606fc36b5eb02fa = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var marker_45a1ba2057b142d2bfe5af83e98a8e22 = L.marker(
+                [48.23589686231121, 16.363542258384022],
+                {}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var icon_664ce28917284e7e88f9324b07f70979 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_45a1ba2057b142d2bfe5af83e98a8e22.setIcon(icon_664ce28917284e7e88f9324b07f70979);
+        
+    
+        var popup_89a809fa65e14865bef9d28fa3aefc36 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3b5433041634c2e8634b2e9ff515377 = $(`<div id="html_a3b5433041634c2e8634b2e9ff515377" style="width: 100.0%; height: 100.0%;">Your location</div>`)[0];
+            popup_89a809fa65e14865bef9d28fa3aefc36.setContent(html_a3b5433041634c2e8634b2e9ff515377);
+        
+
+        marker_45a1ba2057b142d2bfe5af83e98a8e22.bindPopup(popup_89a809fa65e14865bef9d28fa3aefc36)
+        ;
+
+        
+    
+    
+            var poly_line_d6d77489b1f042cb8e89d77d3989bdbc = L.polyline(
+                [[48.23589686231121, 16.363542258384022], [14.5844444, 29.4917691]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var poly_line_7f3b66b4380d48ff893a5370ac73e54e = L.polyline(
+                [[48.23589686231121, 16.363542258384022], [33.7680065, 66.2385139]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var poly_line_9f3e35a04dee45a5a41236f46aebbea7 = L.polyline(
+                [[48.23589686231121, 16.363542258384022], [8.3676771, 49.083416]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var poly_line_f809899fed71471486d920382b5b4f64 = L.polyline(
+                [[48.23589686231121, 16.363542258384022], [49.8955367, -97.1384584]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var poly_line_6d78b8cb74df4a3d9876c9313e7a1e8b = L.polyline(
+                [[48.23589686231121, 16.363542258384022], [37.4350773, 126.69075155692887]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var poly_line_2b4a2fac82a3436cac4099c50974c55a = L.polyline(
+                [[48.23589686231121, 16.363542258384022], [37.5683021, 126.89724766470337]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var poly_line_2ad429cebbbe4b2db74060f551d4977a = L.polyline(
+                [[48.23589686231121, 16.363542258384022], [37.2864084, 127.03680502041217]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var poly_line_49dd38076c4f471098735861e5ba4a35 = L.polyline(
+                [[48.23589686231121, 16.363542258384022], [36.36525335, 127.32510742291791]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var poly_line_3348f0f623104a59871945ffaff598e3 = L.polyline(
+                [[48.23589686231121, 16.363542258384022], [35.867807400000004, 127.06458906981494]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var poly_line_045eb423431c4067bfc7686136fb2a81 = L.polyline(
+                [[48.23589686231121, 16.363542258384022], [43.01516255, 141.4096924939122]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var feature_group_083528caf1404d5abbcb491165732843 = L.featureGroup(
+                {}
+            ).addTo(map_f6dd7fe0d2c44c9299f8ad8b67428608);
+        
+    
+            var marker_2b3f2ed16d064539ab2387102028a25b = L.marker(
+                [14.5844444, 29.4917691],
+                {}
+            ).addTo(feature_group_083528caf1404d5abbcb491165732843);
+        
+    
+            var icon_40b3805d647c49f28ab794b76fbf7bc7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_2b3f2ed16d064539ab2387102028a25b.setIcon(icon_40b3805d647c49f28ab794b76fbf7bc7);
+        
+    
+        var popup_39a7adf7ac264841824624b2e07fcbc6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7c7d0b9448a42ce90447308b7ce59d8 = $(`<div id="html_e7c7d0b9448a42ce90447308b7ce59d8" style="width: 100.0%; height: 100.0%;">Titile: "21st Century War" ,   Distance from given point: 3922.38 km</div>`)[0];
+            popup_39a7adf7ac264841824624b2e07fcbc6.setContent(html_e7c7d0b9448a42ce90447308b7ce59d8);
+        
+
+        marker_2b3f2ed16d064539ab2387102028a25b.bindPopup(popup_39a7adf7ac264841824624b2e07fcbc6)
+        ;
+
+        
+    
+    
+            var marker_18ebccdbd9cd4e4a87f90976610e3c37 = L.marker(
+                [33.7680065, 66.2385139],
+                {}
+            ).addTo(feature_group_083528caf1404d5abbcb491165732843);
+        
+    
+            var icon_10d29c8a8a6345d482769ba6b758d0e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_18ebccdbd9cd4e4a87f90976610e3c37.setIcon(icon_10d29c8a8a6345d482769ba6b758d0e6);
+        
+    
+        var popup_35ea1f513cf540c0b7a3b897bcc7ae2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_68c95b107eb644c1b47a1a811a240a3d = $(`<div id="html_68c95b107eb644c1b47a1a811a240a3d" style="width: 100.0%; height: 100.0%;">Titile: "21st Century War" ,   Distance from given point: 4403.16 km</div>`)[0];
+            popup_35ea1f513cf540c0b7a3b897bcc7ae2d.setContent(html_68c95b107eb644c1b47a1a811a240a3d);
+        
+
+        marker_18ebccdbd9cd4e4a87f90976610e3c37.bindPopup(popup_35ea1f513cf540c0b7a3b897bcc7ae2d)
+        ;
+
+        
+    
+    
+            var marker_3bb9f85ccf364c2abae4e167a9e0e349 = L.marker(
+                [8.3676771, 49.083416],
+                {}
+            ).addTo(feature_group_083528caf1404d5abbcb491165732843);
+        
+    
+            var icon_c380804b7d72428290963926565211ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_3bb9f85ccf364c2abae4e167a9e0e349.setIcon(icon_c380804b7d72428290963926565211ca);
+        
+    
+        var popup_25af0cab70d145fd9d8bb0c14d58d678 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55db92b8f0644b4da447143ba15300a9 = $(`<div id="html_55db92b8f0644b4da447143ba15300a9" style="width: 100.0%; height: 100.0%;">Titile: "21st Century War" ,   Distance from given point: 5382.03 km</div>`)[0];
+            popup_25af0cab70d145fd9d8bb0c14d58d678.setContent(html_55db92b8f0644b4da447143ba15300a9);
+        
+
+        marker_3bb9f85ccf364c2abae4e167a9e0e349.bindPopup(popup_25af0cab70d145fd9d8bb0c14d58d678)
+        ;
+
+        
+    
+    
+            var marker_3c1ef838b7de4d4d963fbb5a3cc94d8b = L.marker(
+                [49.8955367, -97.1384584],
+                {}
+            ).addTo(feature_group_083528caf1404d5abbcb491165732843);
+        
+    
+            var icon_7c483e59982441ff8144c15af36a8a3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_3c1ef838b7de4d4d963fbb5a3cc94d8b.setIcon(icon_7c483e59982441ff8144c15af36a8a3a);
+        
+    
+        var popup_3681f798fb774c249ec8a4ff52c778db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_522cae14332a4864953d16327cdecb98 = $(`<div id="html_522cae14332a4864953d16327cdecb98" style="width: 100.0%; height: 100.0%;">Titile: "2030 CE" ,   Distance from given point: 7412.03 km</div>`)[0];
+            popup_3681f798fb774c249ec8a4ff52c778db.setContent(html_522cae14332a4864953d16327cdecb98);
+        
+
+        marker_3c1ef838b7de4d4d963fbb5a3cc94d8b.bindPopup(popup_3681f798fb774c249ec8a4ff52c778db)
+        ;
+
+        
+    
+    
+            var marker_6c1f95ca21774d69ab58c0db78c4680b = L.marker(
+                [37.4350773, 126.69075155692887],
+                {}
+            ).addTo(feature_group_083528caf1404d5abbcb491165732843);
+        
+    
+            var icon_0fc2c7bff26e4b1e9db2120e14bb9e1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_6c1f95ca21774d69ab58c0db78c4680b.setIcon(icon_0fc2c7bff26e4b1e9db2120e14bb9e1f);
+        
+    
+        var popup_937e516cae4143ceb5ecec9f3e888bbf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_562d395b7f6d4b5c91dee611890fc661 = $(`<div id="html_562d395b7f6d4b5c91dee611890fc661" style="width: 100.0%; height: 100.0%;">Titile: "2002 FIFA World Cup" ,   Distance from given point: 8288.86 km</div>`)[0];
+            popup_937e516cae4143ceb5ecec9f3e888bbf.setContent(html_562d395b7f6d4b5c91dee611890fc661);
+        
+
+        marker_6c1f95ca21774d69ab58c0db78c4680b.bindPopup(popup_937e516cae4143ceb5ecec9f3e888bbf)
+        ;
+
+        
+    
+    
+            var marker_9898a7d776ba41ae9fd943534c001631 = L.marker(
+                [37.5683021, 126.89724766470337],
+                {}
+            ).addTo(feature_group_083528caf1404d5abbcb491165732843);
+        
+    
+            var icon_87e86cde4c7a4420adfa20edbfd9f322 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_9898a7d776ba41ae9fd943534c001631.setIcon(icon_87e86cde4c7a4420adfa20edbfd9f322);
+        
+    
+        var popup_793ba5159a6b44d99e2fb7643eef9cc4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b602616f5e4e4bc382b9d8b0cf16aa64 = $(`<div id="html_b602616f5e4e4bc382b9d8b0cf16aa64" style="width: 100.0%; height: 100.0%;">Titile: "2002 FIFA World Cup" ,   Distance from given point: 8289.44 km</div>`)[0];
+            popup_793ba5159a6b44d99e2fb7643eef9cc4.setContent(html_b602616f5e4e4bc382b9d8b0cf16aa64);
+        
+
+        marker_9898a7d776ba41ae9fd943534c001631.bindPopup(popup_793ba5159a6b44d99e2fb7643eef9cc4)
+        ;
+
+        
+    
+    
+            var marker_58fd430cf572499ca3f00d977e76d62b = L.marker(
+                [37.2864084, 127.03680502041217],
+                {}
+            ).addTo(feature_group_083528caf1404d5abbcb491165732843);
+        
+    
+            var icon_5798ee80d5e649f28d757e892558f234 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_58fd430cf572499ca3f00d977e76d62b.setIcon(icon_5798ee80d5e649f28d757e892558f234);
+        
+    
+        var popup_a097deb1fb4f40c48a8847be99ef5961 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2121d7e773f54d0d972f560856dcaa0f = $(`<div id="html_2121d7e773f54d0d972f560856dcaa0f" style="width: 100.0%; height: 100.0%;">Titile: "2002 FIFA World Cup" ,   Distance from given point: 8321.29 km</div>`)[0];
+            popup_a097deb1fb4f40c48a8847be99ef5961.setContent(html_2121d7e773f54d0d972f560856dcaa0f);
+        
+
+        marker_58fd430cf572499ca3f00d977e76d62b.bindPopup(popup_a097deb1fb4f40c48a8847be99ef5961)
+        ;
+
+        
+    
+    
+            var marker_c8658867f15d48e097486b5021966cb8 = L.marker(
+                [36.36525335, 127.32510742291791],
+                {}
+            ).addTo(feature_group_083528caf1404d5abbcb491165732843);
+        
+    
+            var icon_568375b212e3479886421ef36d0e93dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_c8658867f15d48e097486b5021966cb8.setIcon(icon_568375b212e3479886421ef36d0e93dc);
+        
+    
+        var popup_4afab2e549ac4a798d8bd1bae9a8c702 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2ea924c68a74083b38946e9288861b3 = $(`<div id="html_e2ea924c68a74083b38946e9288861b3" style="width: 100.0%; height: 100.0%;">Titile: "2002 FIFA World Cup" ,   Distance from given point: 8416.03 km</div>`)[0];
+            popup_4afab2e549ac4a798d8bd1bae9a8c702.setContent(html_e2ea924c68a74083b38946e9288861b3);
+        
+
+        marker_c8658867f15d48e097486b5021966cb8.bindPopup(popup_4afab2e549ac4a798d8bd1bae9a8c702)
+        ;
+
+        
+    
+    
+            var marker_143d95a30b9a4de3a479ec9412d229a2 = L.marker(
+                [35.867807400000004, 127.06458906981494],
+                {}
+            ).addTo(feature_group_083528caf1404d5abbcb491165732843);
+        
+    
+            var icon_31ae89b7cf794d8aab9fb12a4bc61481 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_143d95a30b9a4de3a479ec9412d229a2.setIcon(icon_31ae89b7cf794d8aab9fb12a4bc61481);
+        
+    
+        var popup_0e1cbfcd41d14cfcb87c30587f3c3eb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_487bd964b9b343e183eff9425d806938 = $(`<div id="html_487bd964b9b343e183eff9425d806938" style="width: 100.0%; height: 100.0%;">Titile: "2002 FIFA World Cup" ,   Distance from given point: 8443.24 km</div>`)[0];
+            popup_0e1cbfcd41d14cfcb87c30587f3c3eb9.setContent(html_487bd964b9b343e183eff9425d806938);
+        
+
+        marker_143d95a30b9a4de3a479ec9412d229a2.bindPopup(popup_0e1cbfcd41d14cfcb87c30587f3c3eb9)
+        ;
+
+        
+    
+    
+            var marker_d96870be5f3e46a98df27f9928bb4ab3 = L.marker(
+                [43.01516255, 141.4096924939122],
+                {}
+            ).addTo(feature_group_083528caf1404d5abbcb491165732843);
+        
+    
+            var icon_971cafe9984f4613902a7df8e712bfcb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_d96870be5f3e46a98df27f9928bb4ab3.setIcon(icon_971cafe9984f4613902a7df8e712bfcb);
+        
+    
+        var popup_15f61847266948978cba188905cd6210 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a542df9f40f4b4baa30226888822a3f = $(`<div id="html_8a542df9f40f4b4baa30226888822a3f" style="width: 100.0%; height: 100.0%;">Titile: "2002 FIFA World Cup" ,   Distance from given point: 8557.79 km</div>`)[0];
+            popup_15f61847266948978cba188905cd6210.setContent(html_8a542df9f40f4b4baa30226888822a3f);
+        
+
+        marker_d96870be5f3e46a98df27f9928bb4ab3.bindPopup(popup_15f61847266948978cba188905cd6210)
+        ;
+
+        
+    
+</script>
