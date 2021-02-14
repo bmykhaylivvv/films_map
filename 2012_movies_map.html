@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_453b544cbb0c4d0f91ff42775b20ce5e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_453b544cbb0c4d0f91ff42775b20ce5e" ></div>
+        
+</body>
+<script>    
+    
+            var map_453b544cbb0c4d0f91ff42775b20ce5e = L.map(
+                "map_453b544cbb0c4d0f91ff42775b20ce5e",
+                {
+                    center: [48.21236439397459, 16.371810554823952],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d71bb541b5a74c4cba275ef4d9e4ca7d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var marker_54f18e1d074548a88421863213db9126 = L.marker(
+                [48.21236439397459, 16.371810554823952],
+                {}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var icon_2f8e5322d4a34322a33db9d7b6eb783c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_54f18e1d074548a88421863213db9126.setIcon(icon_2f8e5322d4a34322a33db9d7b6eb783c);
+        
+    
+        var popup_61a73fc403314501b9f4a3ddd2c1c908 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a943bcc6bebd467daef6bd6347397402 = $(`<div id="html_a943bcc6bebd467daef6bd6347397402" style="width: 100.0%; height: 100.0%;">Your location</div>`)[0];
+            popup_61a73fc403314501b9f4a3ddd2c1c908.setContent(html_a943bcc6bebd467daef6bd6347397402);
+        
+
+        marker_54f18e1d074548a88421863213db9126.bindPopup(popup_61a73fc403314501b9f4a3ddd2c1c908)
+        ;
+
+        
+    
+    
+            var poly_line_98e19b9151e84d5f99e02148a23fb49e = L.polyline(
+                [[48.21236439397459, 16.371810554823952], [51.0304511, 16.774803421659918]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var poly_line_bf6b33608cbf4f759383f7c95960052f = L.polyline(
+                [[48.21236439397459, 16.371810554823952], [52.39526645, 16.86214617629846]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var poly_line_98463641e8cf454399d56e7e541268a4 = L.polyline(
+                [[48.21236439397459, 16.371810554823952], [52.2319581, 21.0067249]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var poly_line_f0824b456e0642878956fead86eae1ef = L.polyline(
+                [[48.21236439397459, 16.371810554823952], [49.8055205, 23.973569165549602]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var poly_line_48556043004d4baa8102da580a984762 = L.polyline(
+                [[48.21236439397459, 16.371810554823952], [54.38997575, 18.64144356483957]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var poly_line_df81c0aadc6d475f8e68b159d33dacf5 = L.polyline(
+                [[48.21236439397459, 16.371810554823952], [41.8933203, 12.4829321]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var poly_line_b2efa98efbe74408a5e4b3c7cefd821d = L.polyline(
+                [[48.21236439397459, 16.371810554823952], [50.4335642, 30.521346101478077]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var poly_line_208a7d9796974b4fbfc6b5416062c5f8 = L.polyline(
+                [[48.21236439397459, 16.371810554823952], [51.5109995, -0.2055267]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var poly_line_bd7f374629f94c279ea55a3cbd3528f8 = L.polyline(
+                [[48.21236439397459, 16.371810554823952], [52.5310214, -1.2649062]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var poly_line_479bcc0552c04dd78b664f884f27ae89 = L.polyline(
+                [[48.21236439397459, 16.371810554823952], [49.980863, 36.262557918318606]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var feature_group_bab484ebf17d439582e7ff91de9d6185 = L.featureGroup(
+                {}
+            ).addTo(map_453b544cbb0c4d0f91ff42775b20ce5e);
+        
+    
+            var marker_501c85f06cba4b97b6a8cadfa074bc96 = L.marker(
+                [51.0304511, 16.774803421659918],
+                {}
+            ).addTo(feature_group_bab484ebf17d439582e7ff91de9d6185);
+        
+    
+            var icon_c5af9844043e421094c1b57daa73d7e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_501c85f06cba4b97b6a8cadfa074bc96.setIcon(icon_c5af9844043e421094c1b57daa73d7e9);
+        
+    
+        var popup_1a16e0bffb3c4df6bd7f3c8ae38cfe2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71261171cefe4d3a86e476a19d4c2f9e = $(`<div id="html_71261171cefe4d3a86e476a19d4c2f9e" style="width: 100.0%; height: 100.0%;">Titile: "2012 UEFA European Football Championship" ,   Distance from given point: 314.78 km</div>`)[0];
+            popup_1a16e0bffb3c4df6bd7f3c8ae38cfe2b.setContent(html_71261171cefe4d3a86e476a19d4c2f9e);
+        
+
+        marker_501c85f06cba4b97b6a8cadfa074bc96.bindPopup(popup_1a16e0bffb3c4df6bd7f3c8ae38cfe2b)
+        ;
+
+        
+    
+    
+            var marker_00832b9585f1421ab7681557fad3df14 = L.marker(
+                [52.39526645, 16.86214617629846],
+                {}
+            ).addTo(feature_group_bab484ebf17d439582e7ff91de9d6185);
+        
+    
+            var icon_74c588cd20214f02979b31aaa0aaac38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_00832b9585f1421ab7681557fad3df14.setIcon(icon_74c588cd20214f02979b31aaa0aaac38);
+        
+    
+        var popup_b3e4e2c1ff1243268c8fc9a01f767fe7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40742b5c6eba4f1a89e6802225788807 = $(`<div id="html_40742b5c6eba4f1a89e6802225788807" style="width: 100.0%; height: 100.0%;">Titile: "2012 UEFA European Football Championship" ,   Distance from given point: 466.59 km</div>`)[0];
+            popup_b3e4e2c1ff1243268c8fc9a01f767fe7.setContent(html_40742b5c6eba4f1a89e6802225788807);
+        
+
+        marker_00832b9585f1421ab7681557fad3df14.bindPopup(popup_b3e4e2c1ff1243268c8fc9a01f767fe7)
+        ;
+
+        
+    
+    
+            var marker_ebbfa5491dd640b09a3c4e531f3baaac = L.marker(
+                [52.2319581, 21.0067249],
+                {}
+            ).addTo(feature_group_bab484ebf17d439582e7ff91de9d6185);
+        
+    
+            var icon_473be5b9ed524478984f6710d8bc37bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_ebbfa5491dd640b09a3c4e531f3baaac.setIcon(icon_473be5b9ed524478984f6710d8bc37bc);
+        
+    
+        var popup_05a7f469e79a4e2995f3588765db3d2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95376f4a55044082ab0ac76ec0bf4fb9 = $(`<div id="html_95376f4a55044082ab0ac76ec0bf4fb9" style="width: 100.0%; height: 100.0%;">Titile: "2012 UEFA European Football Championship" ,   Distance from given point: 555.92 km</div>`)[0];
+            popup_05a7f469e79a4e2995f3588765db3d2d.setContent(html_95376f4a55044082ab0ac76ec0bf4fb9);
+        
+
+        marker_ebbfa5491dd640b09a3c4e531f3baaac.bindPopup(popup_05a7f469e79a4e2995f3588765db3d2d)
+        ;
+
+        
+    
+    
+            var marker_a129227341714310998f0e17331b05a9 = L.marker(
+                [49.8055205, 23.973569165549602],
+                {}
+            ).addTo(feature_group_bab484ebf17d439582e7ff91de9d6185);
+        
+    
+            var icon_bf468c351ec2445fa5fe84a046b57e65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_a129227341714310998f0e17331b05a9.setIcon(icon_bf468c351ec2445fa5fe84a046b57e65);
+        
+    
+        var popup_aa56e272728a4403b120ee6f57d15aad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5559470303d642df8578fb6fc4693cdf = $(`<div id="html_5559470303d642df8578fb6fc4693cdf" style="width: 100.0%; height: 100.0%;">Titile: "2012 UEFA European Football Championship" ,   Distance from given point: 583.37 km</div>`)[0];
+            popup_aa56e272728a4403b120ee6f57d15aad.setContent(html_5559470303d642df8578fb6fc4693cdf);
+        
+
+        marker_a129227341714310998f0e17331b05a9.bindPopup(popup_aa56e272728a4403b120ee6f57d15aad)
+        ;
+
+        
+    
+    
+            var marker_16bcbff3a0f74443893e69db4b65f327 = L.marker(
+                [54.38997575, 18.64144356483957],
+                {}
+            ).addTo(feature_group_bab484ebf17d439582e7ff91de9d6185);
+        
+    
+            var icon_8d6df6095c4948c7aba34a85e136d7af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_16bcbff3a0f74443893e69db4b65f327.setIcon(icon_8d6df6095c4948c7aba34a85e136d7af);
+        
+    
+        var popup_5c3d4d1f6cbc4b9c8da9b2c33190c4a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_59ed929ac84c404b84b7bee0c123a133 = $(`<div id="html_59ed929ac84c404b84b7bee0c123a133" style="width: 100.0%; height: 100.0%;">Titile: "2012 UEFA European Football Championship" ,   Distance from given point: 705.18 km</div>`)[0];
+            popup_5c3d4d1f6cbc4b9c8da9b2c33190c4a8.setContent(html_59ed929ac84c404b84b7bee0c123a133);
+        
+
+        marker_16bcbff3a0f74443893e69db4b65f327.bindPopup(popup_5c3d4d1f6cbc4b9c8da9b2c33190c4a8)
+        ;
+
+        
+    
+    
+            var marker_fea28f9ed5f3438f86b18ecdb4a4ec19 = L.marker(
+                [41.8933203, 12.4829321],
+                {}
+            ).addTo(feature_group_bab484ebf17d439582e7ff91de9d6185);
+        
+    
+            var icon_39a67cde0a564973bd64460c31fd50d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_fea28f9ed5f3438f86b18ecdb4a4ec19.setIcon(icon_39a67cde0a564973bd64460c31fd50d2);
+        
+    
+        var popup_6fe824458b2b4b33802295e51dcce92d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d5823bcf74841ffb6ee002806bf761d = $(`<div id="html_5d5823bcf74841ffb6ee002806bf761d" style="width: 100.0%; height: 100.0%;">Titile: "100 Bullets D'Argento" ,   Distance from given point: 765.9 km</div>`)[0];
+            popup_6fe824458b2b4b33802295e51dcce92d.setContent(html_5d5823bcf74841ffb6ee002806bf761d);
+        
+
+        marker_fea28f9ed5f3438f86b18ecdb4a4ec19.bindPopup(popup_6fe824458b2b4b33802295e51dcce92d)
+        ;
+
+        
+    
+    
+            var marker_3be70c6636114fa9a7e99af7596bdf79 = L.marker(
+                [50.4335642, 30.521346101478077],
+                {}
+            ).addTo(feature_group_bab484ebf17d439582e7ff91de9d6185);
+        
+    
+            var icon_da0bd6f6ab8048b18b716274eeeddf91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_3be70c6636114fa9a7e99af7596bdf79.setIcon(icon_da0bd6f6ab8048b18b716274eeeddf91);
+        
+    
+        var popup_cf5c9538f0f74971ac4e4fa64e08100a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e212a7c36244e439da09899eaa179d4 = $(`<div id="html_1e212a7c36244e439da09899eaa179d4" style="width: 100.0%; height: 100.0%;">Titile: "2012 UEFA European Football Championship" ,   Distance from given point: 1056.1 km</div>`)[0];
+            popup_cf5c9538f0f74971ac4e4fa64e08100a.setContent(html_1e212a7c36244e439da09899eaa179d4);
+        
+
+        marker_3be70c6636114fa9a7e99af7596bdf79.bindPopup(popup_cf5c9538f0f74971ac4e4fa64e08100a)
+        ;
+
+        
+    
+    
+            var marker_a2ea3b66f88b4ce38db51de4fdf8f7c9 = L.marker(
+                [51.5109995, -0.2055267],
+                {}
+            ).addTo(feature_group_bab484ebf17d439582e7ff91de9d6185);
+        
+    
+            var icon_cddd5af3715e48afb687ce658d225138 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_a2ea3b66f88b4ce38db51de4fdf8f7c9.setIcon(icon_cddd5af3715e48afb687ce658d225138);
+        
+    
+        var popup_48f487ba64d64047bca8666b5e407f1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7bdb8dfe4d48463799cea16ba0b6543f = $(`<div id="html_7bdb8dfe4d48463799cea16ba0b6543f" style="width: 100.0%; height: 100.0%;">Titile: "13 Steps Down" ,   Distance from given point: 1243.97 km</div>`)[0];
+            popup_48f487ba64d64047bca8666b5e407f1d.setContent(html_7bdb8dfe4d48463799cea16ba0b6543f);
+        
+
+        marker_a2ea3b66f88b4ce38db51de4fdf8f7c9.bindPopup(popup_48f487ba64d64047bca8666b5e407f1d)
+        ;
+
+        
+    
+    
+            var marker_101c4647d5854263a78b3df4b4257dea = L.marker(
+                [52.5310214, -1.2649062],
+                {}
+            ).addTo(feature_group_bab484ebf17d439582e7ff91de9d6185);
+        
+    
+            var icon_b2f21ddea6914f77870071c9189d64e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_101c4647d5854263a78b3df4b4257dea.setIcon(icon_b2f21ddea6914f77870071c9189d64e2);
+        
+    
+        var popup_48872184803347668ed76ffac8a563f2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4adf67d143742fd8fce9fbcbf03b496 = $(`<div id="html_e4adf67d143742fd8fce9fbcbf03b496" style="width: 100.0%; height: 100.0%;">Titile: "13 Steps Down" ,   Distance from given point: 1339.28 km</div>`)[0];
+            popup_48872184803347668ed76ffac8a563f2.setContent(html_e4adf67d143742fd8fce9fbcbf03b496);
+        
+
+        marker_101c4647d5854263a78b3df4b4257dea.bindPopup(popup_48872184803347668ed76ffac8a563f2)
+        ;
+
+        
+    
+    
+            var marker_fe4e9015cadf4521a55794556249e05d = L.marker(
+                [49.980863, 36.262557918318606],
+                {}
+            ).addTo(feature_group_bab484ebf17d439582e7ff91de9d6185);
+        
+    
+            var icon_47326b690e4440758aacfa6d7e05e02a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_fe4e9015cadf4521a55794556249e05d.setIcon(icon_47326b690e4440758aacfa6d7e05e02a);
+        
+    
+        var popup_e65f9191e1564e33815bf02843709ac2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b1ec1e618f594dc18423b9b99a43dbf5 = $(`<div id="html_b1ec1e618f594dc18423b9b99a43dbf5" style="width: 100.0%; height: 100.0%;">Titile: "2012 UEFA European Football Championship" ,   Distance from given point: 1461.45 km</div>`)[0];
+            popup_e65f9191e1564e33815bf02843709ac2.setContent(html_b1ec1e618f594dc18423b9b99a43dbf5);
+        
+
+        marker_fe4e9015cadf4521a55794556249e05d.bindPopup(popup_e65f9191e1564e33815bf02843709ac2)
+        ;
+
+        
+    
+</script>
