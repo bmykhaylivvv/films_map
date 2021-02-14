@@ -54,10 +54,10 @@ final_film_lst = sorted_films[:10]
 my_location = (current_lat, current_long)
 
 # Folium Part
-map = folium.Map(location=my_location, zoom_start=3)
+flm_map = folium.Map(location=my_location, zoom_start=3)
 
 
-map.add_child(folium.Marker(location=my_location,
+flm_map.add_child(folium.Marker(location=my_location,
                             popup="Your location",
                             icon=folium.Icon(color='red', icon='home')))
 
@@ -72,9 +72,9 @@ for film_lst in final_film_lst:
                                  popup=f"Titile: {title}, \n Distance from given point: {round(distance_from_given_point, 2)} km",
                                  icon=folium.Icon(color='cadetblue')))
 
-    folium.PolyLine(((my_location), (coordinates)), color='gray').add_to(map)
+    folium.PolyLine(((my_location), (coordinates)), color='gray').add_to(flm_map)
 
-map.add_child(flms)
-map.save(f"{year}_movies_map.html")
+flm_map.add_child(flms)
+flm_map.save(f"{year}_movies_map.html")
 
 print(f"Finished. Please have look at the map {year}_movies_map.html")
